@@ -1,0 +1,85 @@
+.App {
+  display: flex;
+  flex-direction: column; /* Ustawia układ pionowy */
+  font-family: 'Sometype Mono', monospace;
+}
+
+.notes-container {
+  display: flex;
+  width: 100%;
+  gap: 5%;
+  text-align: center;
+}
+
+.bucket-container {
+  padding: 3vh;
+  flex: 1;
+  min-width: 20vh;
+}
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.popup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.popup input,
+.popup textarea,
+.popup select {
+  flex: 1; /* Ustawienie flex: 1 na inputach, textarea i select, aby zajmowały dostępną przestrzeń */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.popup button {
+  padding: 10px 20px;
+  background: #559436;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.popup button:last-child {
+  margin-right: 0;
+}
+
+.popup button:hover {
+  background: #446e2f;
+}
+
+.notatka{
+  color: #559436;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.addTask{
+  color: #559436;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: large;
+}
+
+button{
+  background-color: white;
+  border: none;
+}
+h1{
+  padding-left: 4vh;
+}
